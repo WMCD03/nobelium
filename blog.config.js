@@ -34,11 +34,11 @@ const BLOG = {
     // support provider: gitalk
     provider: '', // leave it empty if you don't need any comment plugin
     gitalkConfig: {
-      repo: 'https://github.com/WMCD03/WarM-ColD', // The repository of store comments
-      owner: 'WMCD03',
-      admin: ['WMCD03'],
-      clientID: '904226587b0a27ddcef9',
-      clientSecret: '43017aa7bcc29466099ac5a3434bf4e81d676e82',
+      repo: '', // The repository of store comments
+      owner: '',
+      admin: [],
+      clientID: '',
+      clientSecret: '',
       distractionFreeMode: false
     }
   }
