@@ -32,7 +32,7 @@ const BLOG = {
   },
   comment: {
     // support provider: gitalk
-    provider: 'gitalk', // leave it empty if you don't need any comment plugin
+    provider: '', // leave it empty if you don't need any comment plugin
     gitalkConfig: {
       repo: 'https://github.com/WMCD03/WarM-ColD', // The repository of store comments
       owner: 'WMCD03',
