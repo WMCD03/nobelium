@@ -31,7 +31,7 @@ const DefaultLayout = ({ children, blockMap, frontMatter }) => {
       type="article"
     >
       <article>
-        <h1 className="font-sans font-bold text-3xl text-black dark:text-white">
+        <h1 className="font-bold text-3xl text-black dark:text-white">
           {frontMatter.title}
         </h1>
         {frontMatter.type !== 'Page' && (
@@ -50,7 +50,10 @@ const DefaultLayout = ({ children, blockMap, frontMatter }) => {
               <span className="hidden md:inline">&nbsp;/&nbsp;</span>
             </div>
             <div className="mx-2 md:ml-0">
-              {formatDate(frontMatter.date, BLOG.lang)}
+              {formatDate(
+                frontMatter.date || frontMatter.createdTime,
+                BLOG.lang
+              )}
             </div>
             {frontMatter.tags && (
               <div className="flex flex-wrap">
@@ -71,7 +74,7 @@ const DefaultLayout = ({ children, blockMap, frontMatter }) => {
         )}
         {children}
         {blockMap && (
-          <div className="text-gray-600 dark:text-gray-300">
+          <div className="">
             <NotionRenderer
               recordMap={blockMap}
               components={{
