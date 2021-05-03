@@ -2,7 +2,7 @@
 
 # Nobelium
 
-A static blog build on top of Notion and Nextjs, deployed on [Vercel](https://vercel.com/).
+A static blog build on top of Notion and Nextjs, deployed on [Vercel](https://vercel.com?utm_source=Craigary&utm_campaign=oss).
 
 <p>
   <a aria-label="GitHub commit activity" href="https://github.com/craigary/nobelium/commits/main" title="GitHub commit activity">
@@ -14,7 +14,7 @@ A static blog build on top of Notion and Nextjs, deployed on [Vercel](https://ve
   <a aria-label="Build status" href="#" title="Build status">
     <img src="https://img.shields.io/github/deployments/craigary/nobelium/Preview?logo=Vercel&style=for-the-badge">
   </a>
-  <a aria-label="Powered by Vercel" href="https://vercel.com/" title="Powered by Vercel">
+  <a aria-label="Powered by Vercel" href="https://vercel.com?utm_source=Craigary&utm_campaign=oss" title="Powered by Vercel">
     <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" height="28">
   </a>
 </p>
@@ -61,7 +61,7 @@ Demo: [https://nobelium.vercel.app/](https://nobelium.vercel.app/)
 - Deploy on [Vercel](https://vercel.com), set following environment variables：
   - `NOTION_PAGE_ID` (Required): The ID of the Notion page you previously shared to the web, usually has 32 digits after your workspace address
   - `NOTION_ACCESS_TOKEN` (Optional): If you decide not to share your database, you can use token to let Nobelium grab data from Notion database. You can find it in your browser cookies called `token_v2`.
-    - Keep in mind notion token is only valid for 180 days, make sure to update manually in vercel dashboard, we probably switch to Official API to resolve this issue in the future.
+    - Keep in mind Notion token is only valid for 180 days, make sure to update manually in vercel dashboard, we probably switch to Official API to resolve this issue in the future. Also, images in Notion database will not properly rendered.
 - **That's it!** Easy-peasy?
 
 ## Roadmap
